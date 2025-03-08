@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #333333;
+  background-color: #f9faff;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.ucapan {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 200px;
+}
+
+.header {
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.name {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #25282b;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-item a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #272b25;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+  color: #fdc435;
+  border-bottom: 2px solid #fdc435;
+}
+
+.content {
+  position: relative;
+  padding: 60px 0;
+}
+
+.content .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.title {
+  font-family: 'ShineInValentine', cursive;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 32px;
+  color: #333333;
+}
+
+.message {
+  color: #565555;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.message p {
+  margin-bottom: 16px;
+}
+
+.profile-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 524px;
+  height: 524px;
+  background: #f8c8dc;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wave-decoration {
+  position: absolute;
+  bottom: 0;       
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  margin-bottom: -1px;
+}
+
+.wave-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Comfortaa:wght@700&family=Raleway:wght@500&display=swap');
+
+@font-face {
+  font-family: 'ShineInValentine';
+  src: url('ShineInValentine-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .name {
+    font-size: 1rem;
+  }
+  
+  .nav-item a {
+    font-size: 0.9rem;
+  }
+  
+  .nav ul {
+    gap: 2rem;
+  }
+  
+  .content {
+    padding: 40px 0;
+  }
+  
+  .content .container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about-me, .profile-section {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .about-me {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-circle {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    font-size: 35px;
+  }
+  
+  .ucapan {
+    padding-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.container {
+display: flex;
+flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .header {
+    padding: 1rem 0;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .name {
+    font-size: 1.1rem;
+  }
+  
+  .content {
+    padding: 30px 0;
+  }
+  
+  .profile-circle {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  .message {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  
+  .message p {
+    margin-bottom: 12px;
+  }
+  
+  .ucapan {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 15px 0;
+  }
+  
+  .nav ul {
+    gap: 15px;
+  }
+  
+  .nav-item a {
+    font-size: 18px;
+  }
+  
+  .content {
+    padding: 20px 0;
+  }
+  
+  .profile-circle {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  
+  .message {
+    font-size: 15px;
+  }
+  
+  .message p {
+    margin-bottom: 10px;
+  }
+  
+  .about-me {
+    margin-bottom: 20px;
+  }
+  
+  .ucapan {
+    padding-bottom: 120px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
